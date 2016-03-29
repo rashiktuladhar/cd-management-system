@@ -1,34 +1,5 @@
 Rails.application.routes.draw do
 
-
-  get 'songs/index'
-
-  get 'songs/create'
-
-  get 'songs/new'
-
-  get 'songs/edit'
-
-  get 'songs/show'
-
-  get 'songs/update'
-
-  get 'songs/destroy'
-
-  get 'cds/index'
-
-  get 'cds/create'
-
-  get 'cds/new'
-
-  get 'cds/edit'
-
-  get 'cds/show'
-
-  get 'cds/update'
-
-  get 'cds/destroy'
-
 #       cds GET    /cds(.:format)            cds#index
 #           POST   /cds(.:format)            cds#create
 #    new_cd GET    /cds/new(.:format)        cds#new
@@ -67,7 +38,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'songs#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
