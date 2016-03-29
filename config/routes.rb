@@ -21,8 +21,10 @@ Rails.application.routes.draw do
 
 
 
-    resources :cds
-    resources :songs
+   
+    resources :songs do
+       resources :cds
+    end
 
 
 
