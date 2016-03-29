@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Song.create([{title: 'Asar', cd_id: '1'}, {title: 'Syndicate', cd_id: '1'}, {title: 'Syndicate', cd_id: '1'}, {title: 'Always', cd_id: '2'}])
+Song.create([{title: 'Asar', cd_id: '1'}, {title: 'Syndicate', cd_id: '2'}, {title: 'Always', cd_id: '3'}])
 
-Cd.create([{album: 'Asar', artist: 'Bipul Chetri', song_id: '1'}, {album: 'Asar', artist: 'Bipul Chetri', song_id: '2'}, {album: 'Always', artist: 'John Bon Jovi', song_id: '3'}])
+Cd.create([{album: 'Asar', artist: 'Bipul Chetri', song_id: '1'}, {album: 'Syncicate', artist: 'Bipul Chetri Live', song_id: '2'}, {album: 'Always', artist: 'John Bon Jovi', song_id: '3'}])
 
