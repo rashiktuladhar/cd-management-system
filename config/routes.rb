@@ -1,4 +1,68 @@
 Rails.application.routes.draw do
+
+
+  get 'songs/index'
+
+  get 'songs/create'
+
+  get 'songs/new'
+
+  get 'songs/edit'
+
+  get 'songs/show'
+
+  get 'songs/update'
+
+  get 'songs/destroy'
+
+  get 'cds/index'
+
+  get 'cds/create'
+
+  get 'cds/new'
+
+  get 'cds/edit'
+
+  get 'cds/show'
+
+  get 'cds/update'
+
+  get 'cds/destroy'
+
+#       cds GET    /cds(.:format)            cds#index
+#           POST   /cds(.:format)            cds#create
+#    new_cd GET    /cds/new(.:format)        cds#new
+#   edit_cd GET    /cds/:id/edit(.:format)   cds#edit
+#        cd GET    /cds/:id(.:format)        cds#show
+#           PATCH  /cds/:id(.:format)        cds#update
+#           PUT    /cds/:id(.:format)        cds#update
+#           DELETE /cds/:id(.:format)        cds#destroy
+#     songs GET    /songs(.:format)          songs#index
+#           POST   /songs(.:format)          songs#create
+#  new_song GET    /songs/new(.:format)      songs#new
+# edit_song GET    /songs/:id/edit(.:format) songs#edit
+#      song GET    /songs/:id(.:format)      songs#show
+#           PATCH  /songs/:id(.:format)      songs#update
+#           PUT    /songs/:id(.:format)      songs#update
+#           DELETE /songs/:id(.:format)      songs#destroy
+
+
+
+
+
+    resources :cds
+    resources :songs
+
+
+
+
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
