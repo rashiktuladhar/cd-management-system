@@ -1,2 +1,14 @@
-<h1>Cds#index</h1>
-<p>Find me in app/views/cds/index.html.erb</p>
+<h1>Cds Details</h1>
+<table border="1">
+	<tr>
+		<th>Artist Name</th>
+		<th>Album Name</th>
+	</tr>
+	<% @cds.each do |cd| %>
+	<tr>
+		<td><%= cd.album %></td>
+		<td><%= cd.artist %></td>
+		<td><%= link_to "View Tracks", cd_songs_path(cd) %></td>
+	</tr>
+	<% end %>
+</table>

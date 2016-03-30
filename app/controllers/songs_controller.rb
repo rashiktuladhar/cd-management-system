@@ -1,6 +1,12 @@
 class SongsController < ApplicationController
   def index
-      @songs = Song.all
+      
+      @cd=Cd.find(params[:cd_id])
+
+      @songs=@cd.songs
+
+      # @songs = Song.all
+
   end
 
   def create
@@ -13,6 +19,7 @@ class SongsController < ApplicationController
   end
 
   def show
+
   end
 
   def update
