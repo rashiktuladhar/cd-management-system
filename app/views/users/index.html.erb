@@ -1,0 +1,13 @@
+<h1>User Details</h1>
+<table border="1">
+	<tr>
+		<th>User Name</th>
+		<th>View Cd</th>
+	</tr>
+	<% @users.each do |user| %>
+	<tr>
+		<td><%= user.fullname %></td>
+		<td><%= link_to "View Cds", user_cds_path(user) %></td>
+	</tr>
+	<% end %>
+</table>

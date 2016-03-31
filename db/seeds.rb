@@ -8,5 +8,7 @@
 
 Song.create([{title: 'Asar', cd_id: '1'}, {title: 'Syndicate', cd_id: '2'}, {title: 'Always', cd_id: '3'}])
 
-Cd.create([{album: 'Asar', artist: 'Bipul Chetri', song_id: '1'}, {album: 'Syncicate', artist: 'Bipul Chetri Live', song_id: '2'}, {album: 'Always', artist: 'John Bon Jovi', song_id: '3'}])
+Cd.create([{album: 'Asar', artist: 'Bipul Chetri', song_id: '1', user_id: '1'},{album: 'Syndicate', artist: 'Bipul Chetri Live', song_id: '2', user_id: '1'},{album: 'Always', artist: 'John Bon Jovi', song_id: '3', user_id: '2'}])
+
+User.create([{fullname: 'Rashik Tuladhar', cd_id: '1'},{fullname: 'Madhav Shrestha', cd_id: '2'}])
 

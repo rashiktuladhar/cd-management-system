@@ -1,10 +1,7 @@
 class CdsController < ApplicationController
   def index
-
-    @cds=Cd.all
-
-     # @cd=Cd.find(params[:cd_id])
-      # @songs=@cd.songs;
+     @user = User.find(params[:user_id])
+     @cds=@user.cds;
   end
 
   def create
